@@ -17,3 +17,5 @@ Watch&Cook is a user-friendly recipe website developed as my first academic proj
 - **JavaScript**
 
 Watch&Cook showcases my commitment to creating functional and user-centric digital experiences. Built with the help of a dedicated team, this project allowed me to learn new skills and collaborate effectively.
+
+For any questions or feedback, feel free to reach out to [Gmail](navinraj99305@gmail.com).
