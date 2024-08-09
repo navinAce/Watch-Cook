@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Watch&Cook</title>
+	
+
+<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+	<style>
+
+
+ html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    margin-left: -1%;
+    margin-top: -1%;
+    z-index: 1000;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+   
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-weight: 400;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 30px;
+    font-weight: 500;
+    color: #482ff7;
+    padding-left: 30px;
+    font-family: system-ui;
+}
+
+.recipie1{
+padding-left: 44px;
+}
+
+.recipie1 h1 {
+    font-size: 40px;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-bottom: 5%;
+ 
+}
+
+.recipie1 img {
+    width: 500px;
+    height: 279px;
+   
+}
+
+.overlay {
+    background: black;
+    height: 279px;
+    width: 500px;
+    position: relative;
+    top: -289px;
+    opacity: 0.4;
+    margin-bottom: -295px;
+}
+
+.content2 .overlay {
+    background: black;
+    height: 279px;
+    width: 500px;
+    position: relative;
+    top: -281px;
+    left: 56%;
+    opacity: 0.4;
+    margin-bottom: -295px;
+}
+
+
+.content1 .cont-part {
+    position: relative;
+    top: -300px;
+    margin-left: 625px;
+}
+
+.recipie1 .content1 .cont-part h1 {
+    font-size: 30px;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-bottom: 0;
+}
+
+.recipie1 .content2 .cont-part h1 {
+    font-size: 30px;
+    font-family: system-ui;
+    font-weight: 500;
+    padding-bottom: 0;
+}
+
+.content1 .cont-part p {
+    font-size: 25px;
+    width: 92%;
+    text-align: justify;
+    line-height: 35px;
+    margin-bottom: -170px;
+}
+
+
+.content2 img {
+    position: relative;
+    left: 56%;
+   
+}
+
+
+
+
+.content2 .cont-part p {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 35px;
+    margin-bottom: -170px;
+}
+
+.content2 .cont-part {
+    position: relative;
+    top: -300px;
+    width: 50%;
+}
+
+.recipie1 button {
+    background: #482ff7;
+    color: white;
+    font-size: 20px;
+    font-family: system-ui;
+    border: 1px solid #482ff7;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    left: -325px;
+    top: -22px;
+    transition: transform 450ms;
+    z-index: 100;
+}
+
+.recipie1 button:hover {
+    transform: scale(1.05);
+    border: 1px solid #482ff7;
+    background: none;
+}
+
+.recipie1 .content2 button {
+    background: #482ff7;
+    color: white;
+    font-size: 20px;
+    font-family: system-ui;
+    border: 1px solid #482ff7;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    left: -6px;
+    top: -34px;
+    margin-left: 72.1%;
+    transition: transform 450ms;
+    z-index: 100;
+}
+
+.recipie1 .content2 button:hover {
+    transform: scale(1.05);
+    border: 1px solid #482ff7;
+    background: none;
+}
+
+.recipie1 .content1  button  a{
+    color: white;
+}
+
+.recipie1 .content2  button  a{
+    color: white;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+     padding: 0px 25px 1px 25px;
+
+}
+
+
+
+.title {
+  color: grey;
+}
+
+
+
+.about h2 {
+    font-size: 40px;
+    position: relative;
+    left: -40%;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+.card .container h2 {
+    font-size: 35px;
+    position: relative;
+    left: 0;
+}
+
+.card .title {
+    color: grey;
+    font-size: 25px;
+	margin-bottom: 10%;
+}
+
+.column {
+    float: right;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    position: relative;
+    left: -15%;
+}
+
+.card p {
+    font-size: 20px;
+    font-family: system-ui;
+	line-height: 10px;
+}
+
+.about .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #482ff7;
+	 opacity: 0.8;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.about .button:hover {
+  background-color: white;
+  color: #482ff7;
+  border: 1px solid #482ff7;
+}
+
+
+
+.banner {
+    width: 101.5%;
+    margin-left: -1%;
+    background-image: url(img/banner1.jpg);
+    height: 500px;
+    background-size: cover;
+	margin-bottom: 5%;
+}
+
+.banner-overlay {
+    background: black;
+    height: 500px;
+    opacity: 0.4;
+}
+
+
+
+.banner p {
+    font-size: 40px;
+    width: 50%;
+    position: relative;
+    top: -80%;
+    left: 5%;
+    color: white;
+    font-family: 'Gabriela', serif;
+    font-weight: 800;
+}
+
+p.email-p {
+    margin-top: 10%;
+}
+
+.card img {
+    width: 100%;
+}
+
+p.email-p i{
+    font-size: 24px;
+}
+
+.banner button {
+    position: relative;
+    top: -80%;
+    left: 5%;
+    background: #482ff7;
+    color: white;
+    padding: 3px 22px 5px 22px;
+    font-size: 25px;
+    border-radius: 50px;
+    border: 1px solid #482ff7;
+    font-family: system-ui;
+}
+
+.banner button:hover{
+    transform: scale(1.05);
+    border: 1px solid #482ff7;
+    background: none;
+}
+
+.banner button a {
+    color: white;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Watch&Cook</a>
+            <ul class="nav-menu">
+			
+			    <li class="nav-item">
+                    <a href="#banner" class="nav-link">Home</a>
+                </li>
+				
+                <li class="nav-item">
+                    <a href="#recipie" class="nav-link">Recipies</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">about</a>
+                </li>
+                
+            </ul>
+			
+           
+        </nav>
+</header>
+
+
+<div class="banner" id="banner">
+<div class="banner-overlay"></div>
+<div id="recipie"></div>
+<p>Get your things ready, note your favourite dish's recipie and start the cooking now :) </p>
+
+<button type="button"><a href="#recipie" class="scrollto">Recipies</a></button>
+
+
+
+</div>
+
+<div class="recipie1">
+
+    <h1>Watch&Cook Recipies</h1>
+
+<!--idli-->
+
+
+
+
+    <div class="content1"> 
+       <img src="img/idli1.jpg">
+       
+       <button type="button"><a href="https://youtu.be/VzgzG2guCZo" target="_blank">Watch Out</a></button></button>
+       <div class="overlay"></div>
+      
+      <div class="cont-part">
+       
+      <h1>Idli</h1>
+      <p>Idli are a type of savoury rice cake, originating from the India, popular as breakfast foods in Southern India and in Sri Lanka. The cakes are made by steaming a batter consisting of fermented black lentile and rice. The fermentation process breaks down the starches so that they are more readily metabolised by the body.</p>
+      </div>
+
+    </div>
+	
+	
+	
+<!--vada-->
+    <div class="content2">
+        <img src="img/wada1.jpg">
+        <div class="overlay"></div>
+        <button type="button"><a href="https://youtu.be/qgYTSsxe7W4" target="_blank"> Watch Out</a></button>
+        
+
+       <div class="cont-part">
+       <h1>Vada</h1>
+       <p>Vada is a category of savoury fried snacks from India. Different types of vadas can be described variously as fritters, cutlets, doughnuts, or dumplings. The various types of vadas are made from different ingredients, ranging from legumes to potatoes. </p>
+       </div>
+ 
+     </div>
+	 
+	 
+	 
+<!--dosa-->
+
+     <div class="content1">
+        <img src="img/dosa1.jpg">
+        
+        <button type="button"><a href="https://youtu.be/IDNtiYTd7_M" target="_blank">Watch Out</a></button>
+        <div class="overlay"></div>
+ 
+       <div class="cont-part">
+       <h1>Dosa</h1>
+       <p>A dosa is a thin pancake or crepe originating from South India, made from a fermented batter predominantly consisting of lentils and rice. Its main ingredients are rice and black gram, ground together in a fine, smooth batter with a dash of salt, then fermented.</p>
+       </div>
+ 
+     </div>
+	 
+	 
+	 
+<!--naan--> 
+     <div class="content2">
+         <img src="img/naan1.jpg">
+         <div class="overlay"></div>
+         <button type="button"><a href="https://youtu.be/aBCEDwUs5yQ" target="_blank">Watch Out</a></button>
+         
+ 
+        <div class="cont-part">
+        <h1>Naan</h1>
+        <p>Naan is a leavened, oven-baked or tawa-fried flatbread which is found in the cuisines mainly of Western Asia, Central Asia, Indian subcontinent. Naan in parts of the Indian Subcontinent usually refers to a specific kind of thick flatbread. Generally, it resembles pita bread.</p>
+        </div>
+  
+      </div>
+<!--shawarma-->
+
+
+
+      <div class="content1">
+        <img src="img/shawarma1.jpg">
+        
+        <button type="button"><a href="https://youtu.be/9QAg7Zqi56c" target="_blank">Watch Out</a></button>
+        <div class="overlay"></div>
+ 
+       <div class="cont-part">
+       <h1>Shawarma</h1>
+       <p>Shawarma is a popular Levantine Arab dish consisting of meat cut into thin slices, stacked in a cone-like shape, and roasted on a slowly-turning vertical rotisserie or spit. Originally made with lamb, mutton or chicken, today's shawarma may also be turkey, beef, or veal.</p>
+       </div>
+ 
+     </div>
+ <!--pav bhaji-->
+ 
+ 
+ 
+ 
+     <div class="content2">
+         <img src="img/pavbhaji.jpg">
+         <div class="overlay"></div>
+         <button type="button"><a href="https://youtu.be/8LDAHvKbu2o" target="_blank">Watch Out</a></button>
+         
+ 
+        <div class="cont-part">
+        <h1>Pav Bhaji</h1>
+        <p>Pav bhaji is a spiced mixture of mashed vegetables in a thick gravy served with bread. Vegetables in the curry may commonly include potatoes, onions, carrots, chillies, peas, bell peppers and tomatoes. Street sellers usually cook the curry on a flat tava and serve the dish hot.</p>
+        </div>
+  
+      </div>
+	  </div>
+	  <div id ="about"></div>
+	  <hr>
+	  
+	  <div class="about">
+	  
+	  
+	   <!--Teams-->
+	 
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/eshwar.jpg">
+      <div class="container">
+        <h2>Eshwar Mahalingam</h2>
+        <p class="title">HTML Work</p>
+        <p>FY. Bsc IT</p>
+		<p>Roll No : 23</p>
+        <p class="email-p"><i class="fa">&#xf0e0; :- eshwarmah12345@gmail.com</i></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/sam.jpg">
+      <div class="container">
+        <h2>Samuel Jebaraj</h2>
+        <p class="title">CSS Work</p>
+        <p>FY. Bsc IT</p>
+		<p>Roll No : 90</p>
+        <p  class="email-p"><i class="fa">&#xf0e0; :- samueljebaraj17@gmail.com</i></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img/vishnu.jpg">
+      <div class="container">
+        <h2>Vishnu</h2>
+        <p class="title">Content Writter</p>
+        <p>FY. Bsc IT</p>
+		<p>Roll No : 63</p>
+        <p  class="email-p"><i class="fa">&#xf0e0; :- vishnusagar493@gmail.com</i></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="card">
+      <img src="img/navin.jpg">
+      <div class="container">
+        <h2>Navinraj</h2>
+        <p class="title">UX Designer</p>
+        <p>FY. Bsc IT</p>
+		<p>Roll No : 58</p>
+        <p  class="email-p"><i class="fa">&#xf0e0; :- navinraj99305@gmail.com</i></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+	  
+	  </div>
+
+
+
+
+</body>
+</html>
